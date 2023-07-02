@@ -7,6 +7,7 @@ http.createServer((req, res) => {
         res.end();
     } else {
         res.writeHead(404, { "Content-Type": "text/html" });
+        console.log("404 Page is been Visited");
         res.write("<h1>404 Not Found</h1>");
         res.end();
     }
